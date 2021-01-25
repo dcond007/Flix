@@ -4,9 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.bumptech.glide.Glide;
 import com.codepath.asynchttpclient.AsyncHttpClient;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
 import com.example.flixster.adapters.MovieAdapter;
@@ -40,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
 
         // Create the adapter
         MovieAdapter movieAdapter = new MovieAdapter(this, movies);
-
         // Set the adapter on the recycler view
         rvMovies.setAdapter(movieAdapter);
         // Set a layout Manager on the recycler view
