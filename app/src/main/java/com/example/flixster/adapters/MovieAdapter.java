@@ -44,7 +44,9 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         // Get the movie at the passed in position
         Movie movie = movies.get(position);
         // Bind the movie data into the VH
+        Glide.with(context).load(R.drawable.placeholder).placeholder(R.drawable.placeholder);
         holder.bind(movie);
+
     }
 
     // Returns the total count of items in the list
@@ -54,7 +56,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
     }
 
     // Define an inner viewholder class
-    public class ViewHolder extends RecyclerView.ViewHolder{
+    public class ViewHolder extends RecyclerView.ViewHolder {
 
         TextView tvTitle;
         TextView tvOverview;
