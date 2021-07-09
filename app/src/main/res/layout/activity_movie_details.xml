@@ -21,6 +21,7 @@
         android:text="TextView"
         android:textStyle="bold"
         android:textSize="30sp"
+        android:padding="8dp"
         tools:text="Wonder Woman 1984"
         android:shadowColor="@color/black"
         android:shadowRadius="4"
@@ -31,9 +32,9 @@
         style="@style/Widget.AppCompat.RatingBar.Indicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="8dp"
         android:isIndicator="true"
         android:numStars="10"
-        android:rating="8.5"
         />
 
     <TextView
@@ -41,6 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TextView"
+        android:padding="8dp"
         tools:text="Wonder Woman comes into conflict with the Soviet Union during the Cold War in the 1980s and finds a formidable foe by the name of the Cheetah."
         android:shadowColor="@color/black"
         android:shadowRadius="4"

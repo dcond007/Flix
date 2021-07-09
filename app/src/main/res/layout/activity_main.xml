@@ -7,8 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background2"
+        android:scaleType="centerCrop"
+        />
     <androidx.recyclerview.widget.RecyclerView
-        android:background="@drawable/background2"
         android:id="@+id/rvMovies"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
